@@ -1,0 +1,151 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red de Apoyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-purple-400 font-sans">
+
+    <div class="relative w-full">      
+        <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="fixed top-3 left-2 z-50 inline-flex items-center text-purple-600 bg-white shadow-xl font-bold rounded-full text-lg px-5 py-3 hover:bg-purple-100 transition-all" type="button">
+            Menú Principal
+            <svg class="w-4 h-4 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+        </button>
+
+        <div id="dropdownInformation" class="z-[100] hidden bg-white border border-purple-200 rounded-2xl shadow-2xl w-72 mt-2">
+            <ul class="p-3 space-y-2 text-sm font-medium">
+                <li><a href="#" class="flex items-center gap-3 p-3 rounded-xl bg-purple-50 hover:bg-purple-600 hover:text-white transition-all">⚙️ Ajustes</a></li>
+                <li><a href="#" class="flex items-center gap-3 p-3 rounded-xl bg-purple-50 hover:bg-purple-600 hover:text-white transition-all">🔔 Notificaciones</a></li>
+                <li><a href="#" class="flex items-center gap-3 p-3 rounded-xl bg-purple-50 hover:bg-purple-600 hover:text-white transition-all text-red-500 hover:text-white">📤 Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="vista-perfiles" class="max-w-[1400px] mx-auto py-16 px-6 mt-12 transition-all duration-500">
+        
+        <div class="p-8 bg-white rounded-3xl shadow-xl flex flex-col md:flex-row gap-8 items-center mb-10">
+            <div class="flex-1">
+                <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl font-extrabold mb-4">Chat de Apoyo</h2>
+                <p class="text-purple-900 text-lg mb-4">Este es tu espacio seguro. Conéctate con otros cuidadores que entienden tu camino.</p>
+                <ul class="text-sm text-purple-700 list-disc list-inside">
+                    <li>Respeto mutuo ante todo.</li>
+                    <li>No compartir datos personales sensibles.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-purple-300 rounded-3xl shadow-xl p-8">
+            <h2 class="text-3xl font-extrabold mb-6 text-purple-900 text-center">Conoce a quienes cuidamos</h2>
+
+            <div class="mx-auto py-16 px-6 bg-purple-300 rounded-3xl shadow-xl mt-10 relative">
+    
+            <h2 class="text-4xl font-extrabold mb-10 text-purple-900 leading-tight text-center mt-[-30px]">
+                Conoce a quienes cuidamos
+            </h2>
+
+
+            
+                <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide">
+                    
+                    <div onclick="abrirChat('Juan G.')" class="snap-center shrink-0 w-64 bg-slate-800 p-6 rounded-3xl flex flex-col items-center cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 transition-all">
+                        <div class="w-24 h-24 rounded-full border-4 border-white overflow-hidden mb-4">
+                            <img src="https://via.placeholder.com/150" alt="Juan" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-400">Juan G.</h3>
+                        <p class="text-white text-sm mb-2">81 años, Bogotá.</p>
+                        <button class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-full text-sm font-bold w-full hover:bg-purple-500">Chatear</button>
+                    </div>
+
+                    <div onclick="abrirChat('María P.')" class="snap-center shrink-0 w-64 bg-slate-800 p-6 rounded-3xl flex flex-col items-center cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 transition-all">
+                        <div class="w-24 h-24 rounded-full border-4 border-white overflow-hidden mb-4">
+                            <img src="https://via.placeholder.com/150" alt="Maria" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold text-pink-400">María P.</h3>
+                        <p class="text-white text-sm mb-2">75 años, Medellín.</p>
+                        <button class="mt-4 px-4 py-2 bg-pink-600 text-white rounded-full text-sm font-bold w-full hover:bg-pink-500">Chatear</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="vista-chat" class="hidden max-w-[1400px] mx-auto h-[85vh] mt-16 px-6 transition-all duration-500">
+            
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex h-full border-4 border-purple-200">
+                
+                <div class="w-1/3 bg-purple-50 border-r border-purple-200 flex flex-col">
+                    <div class="p-4 bg-purple-600 text-white font-bold flex justify-between items-center">
+                        <span>Mis Conversaciones</span>
+                        <button onclick="volverPerfiles()" class="text-sm bg-purple-800 px-3 py-1 rounded-full hover:bg-purple-900">Volver</button>
+                    </div>
+                    <div class="overflow-y-auto flex-1">
+                        <div class="p-4 border-b border-purple-100 flex items-center gap-4 hover:bg-purple-100 cursor-pointer">
+                            <div class="w-12 h-12 bg-purple-300 rounded-full"></div>
+                            <div>
+                                <h4 class="font-bold text-purple-900" id="nombre-lista">Juan G.</h4>
+                                <p class="text-sm text-gray-500">Hola, ¿cómo estás hoy?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-2/3 flex flex-col bg-gray-50">
+                    <div class="p-4 bg-white border-b border-purple-200 flex items-center gap-4 shadow-sm">
+                        <div class="w-12 h-12 bg-purple-400 rounded-full border-2 border-purple-600"></div>
+                        <h3 class="text-xl font-bold text-purple-900" id="nombre-chat-activo">Nombre del Usuario</h3>
+                    </div>
+
+                    <div class="flex-1 p-6 overflow-y-auto bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+                        <div class="flex mb-4">
+                            <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow max-w-[70%] border border-purple-100">
+                                <p class="text-gray-800">¡Hola! Gracias por contactarme en esta red de apoyo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-white border-t border-purple-200 flex gap-2">
+                        <input type="text" placeholder="Escribe un mensaje aquí..." class="flex-1 border border-purple-300 rounded-full px-4 py-2 focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600">
+                        <button class="bg-purple-600 text-white rounded-full p-3 hover:bg-purple-700 hover:scale-105 transition-transform">
+                            ➤
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        
+    <script>
+        function abrirChat(nombreUsuario) {
+            // 1. Ocultar la vista de los perfiles
+            document.getElementById('vista-perfiles').classList.add('hidden');
+            // 2. Mostrar la vista del chat (quitando el 'hidden')
+            document.getElementById('vista-chat').classList.remove('hidden');
+            // 3. Poner el nombre del usuario al que le dimos clic en la cabecera del chat
+            document.getElementById('nombre-chat-activo').innerText = nombreUsuario;
+            document.getElementById('nombre-lista').innerText = nombreUsuario;
+        }
+
+        function volverPerfiles() {
+            // 1. Ocultar la vista del chat
+            document.getElementById('vista-chat').classList.add('hidden');
+            // 2. Volver a mostrar los perfiles
+            document.getElementById('vista-perfiles').classList.remove('hidden');
+        }
+    </script>
+
+    <script  src="./js/flowbite.min.js" ></script>
+    
+</body>
+</html>

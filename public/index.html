@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Alzheimer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" />
+    <!-- Mi CSS personal -->
+    <link rel="stylesheet" href="./css/resgistro.css">
+</head>
+<body class="bg-gradient-to-br from-purple-600 via-white to-purple-600 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto p-4 max-w-[400px]">
+        <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center">
+            <img src="./images/Valery-Logo.png" alt="Logo" class="w-45 h-40 mb-6">
+
+            <div class="flex flex-col w-full gap-6">
+                <button id="botformu" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                    class="text-white text-xl font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:brightness-110 focus:ring-4 focus:ring-purple-300 rounded-xl py-3">
+                    Registrarse
+                </button>
+                <button id="botingre" data-modal-target="modal-loguin" data-modal-toggle="modal-loguin"
+                    class="text-white text-xl font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:brightness-110 focus:ring-4 focus:ring-purple-300 rounded-xl py-3">
+                    Iniciar sesión
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registro Modal -->
+    <div id="authentication-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-white White-gray-00">
+            <img class="w-[80px] h-[80px] rounded-xl border-3 border-purple-600 mr-4" src="./images/Valery-Logo.png" alt="logo">
+            Memoria Viva    
+        </a>
+        <div class="bg-white w-full max-w-2xl rounded-2xl p-8 relative">
+            <form class="formulario1 w-full h-full ">
+                        <div class=" relative z-0 w-full mb-5 group">
+                            <input type="email" name="floating_email" id="floating_email" class="linea1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required /> 
+                            <label for="floating_email" class="w-full peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo electronico</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label for="floating_password" class="w-full peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0  peer-focus:scale-75 peer-focus:-translate-y-6">Contraseña</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="password" name="floating_repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                            <label for="floating_repeat_password" class="w-full peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirmar contraseña</label>
+                        </div>
+                        <div class="grid md:grid-cols-2 md:gap-6">
+                            <div class="relative z-0 w-full mb-5 group">
+                                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="floating_first_name" class="w-full peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
+                            </div>
+                            <div class="relative z-0 w-full mb-5 group">
+                                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="floating_last_name" class="w-full peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Apellido</label>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                            <div class="relative z-0 w-full mb-5 group">
+                                <input type="tel" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-9">Numero de telefono (1234567890)</label>
+                            </div>
+                            <div class="relative z-0 w-full mb-5 group">
+                                <input type="text" name="floating_occupation" id="floating_occupation" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="floating_occupation" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Ocupacion(trabajo)</label>
+                            </div>
+                        </div>
+
+                <div class="flex justify-end gap-4 pt-4">
+                    <button type="submit" class="w-[100px] text-white text-[17px] font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:brightness-110 focus:ring-4 focus:ring-purple-300 rounded-xl py-3">Registrarse</button>
+                    <button type="button" data-modal-hide="authentication-modal" class="w-[100px] text-white text-[17px] font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:brightness-110 focus:ring-4 focus:ring-purple-300 rounded-xl py-3">Cerrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="modal-loguin" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        
+                        <div class="flex flex-col items-center justify-center h-[300px] px-6 py-8 mx-auto gap-4 -translate-x-1">
+                            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-white White-gray-00">
+                                <img class="w-8 h-8 rounded-md border-1 border-purple-600 mr-2" src="./images/Valery-Logo.png" alt="logo">
+                                Memoria Viva    
+                            </a>
+                            <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 white:bg-gray-500 dark:border-gray-700">
+                                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-600 md:text-2xl white:text-gray-500">
+                                        Sign in to your account
+                                    </h1>
+                                    <form class="formulario2 space-y-4 md:space-y-6" action="#">
+                                        <div>
+                                            <label for="email" class="block mb-2 text-sm font-medium text-gray-600 White:text-gray-500">Your email</label>
+                                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-500 text-gray-500 rounded-lg focus:ring-gray-300 focus:border-gray-500 block w-full p-2.5 white:bg-gray-700 white:border-gray-500 white:placeholder-gray-400 white:text-gray-500 white:focus:ring-gray-300 white:focus:border-gray-300" placeholder="name@company.com" required="">
+                                        </div>
+                                        <div>
+                                            <label for="password" class="block mb-2 text-sm font-medium text-gray-600 White:text-white">Password</label>
+                                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-500 text-gray-500 rounded-lg focus:ring-gray-300 focus:border-gray-500 block w-full p-2.5 white:bg-gray-700 white:border-gray-500 white:placeholder-gray-400 white:text-gray-500 white:focus:ring-gray-300 white:focus:border-gray-300" required="">
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-start">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex justify-end gap-4 pt-4">
+                                            <button type="submit" class="w-[100px] text-white text-[17px] font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:brightness-110 focus:ring-4 focus:ring-purple-300 rounded-xl py-3">Ingresar</button>
+                                            <button type="button" data-modal-hide="modal-loguin" class="w-[100px] text-white text-[17px] font-semibold bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:brightness-110 focus:ring-4 focus:ring-purple-300 rounded-xl py-3">Cerrar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+
+
+
+    <script src="./js/registro.js"></script>
+    <script src="./js/flowbite.min.js"></script> 
+</body>
+</html>

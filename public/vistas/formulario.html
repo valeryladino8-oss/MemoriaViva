@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/semantic.min.css">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div class="container ui">
+        <form class="ui form">
+            <p>Datos de Registro de Usuario</p>
+            <div class="two fields">
+                <div class="field">
+                    <label>Nombres: </label>
+                    <input type="text" name="nombres" placeholder="Digite su nombre completo">
+                </div>
+                <div class="field">
+                    <label>Genero: </label>
+                    <select type="ui dropdown" name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">femenino</option>
+                        <option value="otro">otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    <label>Nombre de usuario: </label>
+                    <input type="text" name="nombre_usuario" placeholder="Digite su nombre de usuario">
+                </div>
+                <div class="field">
+                    <label>Password: </label>
+                    <input type="text" name="password" placeholder="password">
+                </div>
+            </div>
+            <div class="inline field">
+                <div class="ui checkbox">
+                    <input type="checkbox" name="terminos_condiciones">
+                    <label>Acepto terminos y condiciones</label>
+                </div>
+            </div>
+            <div class="ui primary submit button">Registrar</div>
+            <div class="ui error message"></div>
+        </form>
+    </div>
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/semantic.min.js"></script>
+
+    <script>
+        // $('.ui.form')
+        // .form({
+        //     fields: {
+        //     nombres     : 'empty',
+        //     genero      : 'empty',
+        //     nombre_usuario  : 'empty',
+        //     password        : ['minLength','empty'],
+        //     terminos_condiciones    :'empty'
+        //     }
+        // })
+        // ;
+
+        $('.ui.form')
+        .form({
+            fields:{
+                nombres: {
+                    identifier: 'nombres',
+                    rules: [
+                        {
+                            type: 'emtpy',
+                            prompt: 'Digite su nombre completo'
+                        }
+                    ]
+                },
+                generos: {
+                    identifier: 'generos',
+                    rules: [
+                        {
+                            type: 'emtpy',
+                            prompt: 'Seleccione un genero'
+                        }
+                    ]
+                },
+                usuario: {
+                    identifier: 'nombre_usuario',
+                    rules: [
+                        {
+                            type: 'emtpy',
+                            prompt: 'Digite su nombre de usuario'
+                        }
+                    ]
+                },
+                password: {
+                    identifier: 'password',
+                    rules: [
+                        {
+                            type: 'emtpy',
+                            prompt: 'Porfavor digite su contraseña'
+                        },
+                        {
+                            type: 'minLegth[8]',
+                            prompt: 'La contraseña debe tener una longitud de 8 o mas caracteres'
+                        }
+                    ]
+                },
+                terminos_condiciones: {
+                    identifier: 'terminos_condiciones',
+                    rules: [
+                        {
+                            type: 'checked',
+                            prompt: 'Porfavor aceptar terminos y condiciones'
+                        }
+                    ]
+                },
+                
+            }
+        })
+    </script>
+
+    
+</body>
+</html>
+ /* .input-style {
+            @apply border border-gray-300 rounded-lg px-4 py-2 text-gray-900 focus:ring-2 focus:ring-purple-500 focus:outline-none;
+        }
+        .btn-primary {
+            @apply text-white bg-purple-600 hover:bg-purple-700 font-medium rounded-lg px-4 py-2;
+        }
+        .btn-secondary {
+            @apply text-gray-700 bg-gray-200 hover:bg-gray-300 font-medium rounded-lg px-4 py-2;
+        } */

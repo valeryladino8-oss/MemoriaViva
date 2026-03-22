@@ -1,0 +1,60 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(max-width:600px) {
+    .container2{ 
+        width:100vw;
+        height: 100vh;
+        background-color:rgb(171, 81, 231) ;
+    }
+}
+
+@media(min-width:600px) and ( max-width:1024px){
+    .container2{ 
+        width:100vw;
+        height: 100vh;
+        background-color: rgb(171, 81, 231) ;
+    }
+
+}
+
+@media ( min-width:1024px) {
+    .container2{
+        width:100vw ;
+        height: 100vh;
+        background-color: rgb(171, 81, 231) ;
+
+    }    
+} 
+
+/* width:100% ;
+        height: 100%; */
+
+.container2 nav {
+    margin-top: 180px; 
+}
+
+.botones-loguin{
+    margin-top: 16px;
+
+}
+.formulario1{
+    margin-top: 40px;
+    padding-inline: 70px;
+    height: 300px;
+}
+
+.botonderegistro1{
+    margin-top: 30px;
+
+}
+.forr{
+    width: 900px;
+    height: 300px;
+}
+
+
+

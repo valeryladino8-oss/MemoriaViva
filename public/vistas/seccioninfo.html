@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección Informativa</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" />
+    <!-- Mi CSS personal -->
+    <link rel="stylesheet" href="./css/valeryiniciotodo.css">
+
+</head>
+<body class="bg-purple-400">
+    <div  class="relative w-full">       
+        <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation" class="rounded-3xl fixed top-3 left-2 z-50 inline-flex  text-purple-400 bg-white box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xl font-medium leading-10 rounded-base text-lg px-4 py-2.5 focus:outline-none" type="button">
+        
+        <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div id="dropdownInformation" class="z-[100] hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-72">
+            <div class="p-2">
+            <div class="flex items-center px-2.5 p-2 space-x-1.5 text-sm bg-neutral-secondary-strong rounded">
+                <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Rounded avatar">
+                <div class="text-sm">
+                <div class="font-medium text-heading">Bonnie Green</div>
+                <div class="truncate text-body">name@flowbite.com</div>
+                </div>
+                <span class="bg-brand-softer border border-brand-subtle text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded ms-auto">PRO</span>
+            </div>
+            </div>
+
+            <ul class="px-2 pb-2 text-sm font-medium" aria-labelledby="dropdownInformationButton">
+                <li>
+                    <a href="seccioninfo.html" class="group mt-1 flex items-center gap-3 w-full p-2.5 rounded-xl bg-purple-100 hover:bg-purple-600 transition-all duration-300">
+                        <span class="text-xl transition-transform duration-300 group-hover:scale-125">🧠</span>
+                        <span class="font-bold text-gray-900 group-hover:text-white">Infórmate</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="seccionchat.html" class="group mt-1 flex items-center gap-3 w-full p-2.5 rounded-xl bg-purple-100 hover:bg-purple-600 transition-all duration-300">
+                        <span class="text-xl transition-transform duration-300 group-hover:scale-125">🤝</span>
+                        <span class="font-bold text-gray-900 group-hover:text-white">Red de Apoyo</span>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="seccionactivida.html" class="group mt-1 flex items-center gap-3 w-full p-2.5 rounded-xl bg-purple-100 hover:bg-purple-600 transition-all duration-300">
+                        <span class="text-xl transition-transform duration-300 group-hover:scale-125">🎨</span>
+                        <span class="font-bold text-gray-900 group-hover:text-white">Actividades</span>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="seccionajustes.html" class="group mt-1 flex items-center gap-3 w-full p-2.5 rounded-xl bg-purple-100 hover:bg-purple-600 transition-all duration-300">
+                        <span class="text-xl transition-transform duration-300 group-hover:scale-125">⚙️</span>
+                        <span class="font-bold text-gray-900 group-hover:text-white">Ajustes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="group mt-1 flex items-center gap-3 w-full p-2.5 rounded-xl bg-purple-100 hover:bg-purple-600 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <span class="text-xl transition-transform duration-300 group-hover:scale-125">📤</span>
+                        <span class="font-bold text-gray-900 group-hover:text-white">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="relative w-full h-[800px] overflow-hidden z-10 ">
+            
+            <div class="absolute inset-0 z-50 flex flex-col items-start justify-center px-8 md:px-24 pointer-events-none">
+                <h1 class="text-white text-4xl md:text-5xl font-extrabold drop-shadow-2xl">
+                    Cuidar no es solo un trabajo o una responsabilidad
+                <p class="text-white text-lg md:text-xl mt-4 max-w-xl drop-shadow-md">
+                    Es el arte de acompañar a un alma a sentirse segura en un mundo que le resulta extraño.
+                </h1>
+                </p>
+            </div>
+
+            <div id="default-carousel" class=" relative w-full h-full" data-carousel="slide">
+                <div class="relative h-full overflow-hidden">
+                    <div class=" duration-700 ease-in-out" data-carousel-item>
+                        <img src="/public/images/imagen1.png" class="absolute block w-full h-auto object-cover object-top" alt="Fondo 1">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div class=" duration-700 ease-in-out" data-carousel-item>
+                        <img src="/public/images/imagen2.png" class="absolute block w-full h-auto object-cover object-top" alt="Fondo 2">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                    <div class=" duration-700 ease-in-out" data-carousel-item>
+                        <img src="/public/images/imagen3.png" class="absolute block w-full h-auto object-cover object-top" alt="Fondo 2">
+                        <div class="absolute inset-0 bg-black/30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        //PARA COLOCAR EL INDICE//
+
+        <nav class="max-w-4xl mx-auto my-10 px-4">
+            <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-white/20 shadow-xl text-center">
+                <h3 class="text-white font-bold mb-4 uppercase">Explora el contenido</h3>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="#que-es" class="px-5 py-2 bg-purple-600 text-white rounded-full font-bold text-sm">¿Qué es el Alzheimer?</a>
+                    <a href="#comparativa" class="px-5 py-2 bg-purple-600 text-white rounded-full font-bold text-sm">Alzheimer vs. Demencia: Por qué no son lo mismo aunque siempre van de la mano</a>
+                    <a href="#otrasdemencias" class="px-5 py-2 bg-purple-600 text-white rounded-full font-bold text-sm">Más allá del Alzheimer: Conociendo otros rostros de la demencia</a>
+                    <a href="#diagnosticado" class="px-5 py-2 bg-purple-600 text-white rounded-full font-bold text-sm">Un nuevo camino: Primeros pasos tras el diagnóstico</a>
+                    <a href="#concejoscuidador" class="px-5 py-2 bg-purple-600 text-white rounded-full font-bold text-sm">Cuidar con dedicación y ternura</a>
+                    <a href="#cuidadorconcejo" class="px-5 py-2 bg-purple-600 text-white rounded-full font-bold text-sm">Cuídese mientras cuida a un ser querido</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="max-w-[1400px] mx-auto py-16 px-6 relative">
+            <div class="flex flex-col lg:flex-row gap-10 items-start mb-10 ">               
+                <div id="que-es" class="w-full lg:w-[60%] z-20">
+                    <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl md:text-5xl font-extrabold mb-6">
+                        ¿Qué es el Alzheimer?
+                    </h2>
+                    <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                        El Alzheimer es una enfermedad neurodegenerativa progresiva y la causa más común de demencia (entre el 60% y 80% de los casos).
+                        A diferencia del olvido común por la edad, el Alzheimer destruye las células nerviosas y las conexiones en la corteza cerebral,
+                        lo que provoca una pérdida severa de la memoria y las capacidades cognitivas.
+                    </p>
+                    <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                        Los síntomas de Alzheimer (cambios en la forma de pensar, recordar, razonar y comportarse) se conocen como demencia. Por esta razón,
+                        algunas veces se hace referencia a la enfermedad de Alzheimer simplemente como “demencia”. Otras enfermedades y afecciones también 
+                        pueden ocasionar demencia, pero la enfermedad de Alzheimer es su causa más frecuente en las personas mayores. <br><br>
+                        La enfermedad de Alzheimer no es una parte normal del envejecimiento, sino que es el resultado de cambios complejos 
+                        en el cerebro que empiezan años antes de que aparezcan los síntomas y que originan la pérdida de neuronas y sus conexiones.            
+                    </p>
+                </div>
+
+                <div class="w-full lg:w-[40%] lg:mt-24">
+                    <div class="sticky top-10 ">
+                        <iframe 
+                            class="w-full aspect-video rounded-xl shadow-2xl border-4 border-white/10" 
+                            src="https://www.youtube.com/embed/6lA6VngZfMI?si=8kM-4o7jxjuvxFsX"
+                            frameborder="0" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-30">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-0 shadow-2xl rounded-2xl overflow-hidden border border-white/10">
+                    <div class="bg-purple-500 p-10 flex flex-col justify-start border-b md:border-b-0 md:border-r border-white/20">
+                        <h2 class="text-3xl font-extrabold mb-4 text-purple-800 h-24 flex items-center leading-tight">La etapa inicial de Alzheimer</h2>
+                        <p class="text-white text-lg">Es cuando una persona empieza a tener pérdida de la memoria y otras dificultades cognitivas,
+                        aunque los síntomas parecen ser graduales para la persona y su familia.
+                        </p>
+                    </div>
+                    <div class="bg-purple-500 p-10 flex flex-col justify-start border-b md:border-b-0 md:border-r border-white/20">
+                        <h2 class="text-3xl font-extrabold mb-4 text-purple-800 h-24 flex items-center leading-tight">La etapa Intermedia del Alzaheimer</h2>
+                        <p class="text-white text-lg">Los daños ocurren en áreas del cerebro que controlan el lenguaje, el razonamiento y el proceso sensorial
+                        y los pensamientos conscientes. Las personas en esta etapa pueden tener más confusión y dificultad para reconocer a su familia y amigos,
+                        Es la etapa más larga.
+                        </p>
+                    </div>
+                    <div class="bg-purple-500 p-10 flex flex-col justify-start">
+                        <h2 class="text-3xl font-extrabold mb-4 text-purple-800 h-24 flex items-center leading-tight">La etapa Avanzada del Alzaheimer</h2>
+                        <p class="text-white text-lg">La persona no puede comunicarse, depende totalmente de otros para su cuidado y es posible
+                        que se quede en la cama la mayoría o todo el tiempo, a medida que el cuerpo va dejando de funcionar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="comparativa" class="mt-20">
+                <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl md:text-5xl font-extrabold mb-10">
+                    Alzheimer vs. Demencia: Por qué no son lo mismo aunque siempre van de la mano
+                </h2>
+                <div class="space-y-6">
+                    <p class="text-white text-xl leading-relaxed mb-10">
+                        La Demencia no es una enfermedad única. Es un síndrome,"un paraguas"; es decir, un conjunto de síntomas (pérdida de memoria, confusión, dificultad
+                        para hablar) que son lo suficientemente graves como para interferir con la vida diaria.
+                    </p>
+                    
+                    <p class="text-white text-xl leading-relaxed mb-10">
+                        El Alzheimer, en cambio, es una enfermedad específica que causa esos síntomas. Es la responsable de que ese "paraguas" se abra en el 
+                        60-80% de los casos.Puedes tener demencia y que NO sea Alzheimer (puede ser <span class="font-bold text-purple-900">demencia vascular</span>,
+                        <span class="font-bold text-purple-900">demencia por cuerpos de Lewy</span>,o <span class="font-bold text-purple-900">demencia frontotemporal</span>
+                        ). Pero si tienes Alzheimer, por definición terminarás desarrollando un cuadro de demencia.
+                    </p>
+
+                    <p class="text-white text-xl leading-relaxed mb-10">
+                        El Alzheimer es la causa y la Demencia es el resultado, en el alzaheimer las proteínas (tau y amiloide) empiezan a destruir neuronas 
+                        en el cerebro años antes de que se note, cuando el daño cerebral es tan grande que la persona ya no puede recordar el nombre de su hijo
+                        o cómo vestirse, decimos que esa persona tiene <span class="font-bold text-purple-900">"Demencia tipo Alzheimer".</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="relative max-w-4xl mx-auto py-12 px-4">
+                <div class="absolute top-1/2 left-0 w-full h-1 bg-purple-300 -translate-y-1/2 z-0 hidden md:block"></div>
+                <div class="relative z-10 flex flex-col md:flex-row items-stretch justify-between gap-8">   
+                    <div class="flex flex-col items-center group flex-1">
+                        <div class="w-full max-w-[400px] aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-xl overflow-hidden transition-all duration-300 group-hover:scale-[1.5] group-hover:border-purple-500">
+                            <img src="/public/images/imaparagdemen.png" 
+                                alt="Paso 1" class="w-full h-full object-cover">
+                        </div>
+                        <span class="mt-4 font-bold text-purple-900 text-lg text-center px-2">
+                            El Concepto General<br>(La demencia)
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col items-center group flex-1">
+                        <div class="w-full max-w-[400px] aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-xl overflow-hidden transition-all duration-300 group-hover:scale-[1.5] group-hover:border-purple-500">
+                            <img src="../images/imaparagalzahi.png" 
+                                alt="Paso 2" class="w-full h-full object-cover">
+                        </div>
+                        <span class="mt-4 font-bold text-purple-900 text-lg text-center px-2">
+                            La Causa Específica<br>(El Alzheimer)
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col items-center group flex-1">
+                        <div class="w-full max-w-[400px] aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-xl overflow-hidden transition-all duration-300 group-hover:scale-[1.5] group-hover:border-purple-500">
+                            <img src="../images/fusionparag.png" 
+                                alt="Paso 3" class="w-full h-full object-cover">
+                        </div>
+                        <span class="mt-4 font-bold text-purple-900 text-lg text-center px-2">
+                            El Estado Final<br>(Demencia tipo Alzheimer)
+                        </span>
+                    </div>
+                </div>
+            </div>               
+                
+            <div id="otrasdemencias" class="mt-[10px]">
+                <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl md:text-5xl font-extrabold mb-10">
+                    Más allá del Alzheimer: Conociendo otros rostros de la demencia
+                </h2>
+                <div class="overflow-x-auto rounded-xl shadow-2xl">
+                    <table class="w-full text-left border-collapse bg-slate-800 text-white">
+                        <thead class="text-xl uppercase bg-white text-purple-900">
+                            <tr>
+                                <th class="px-6 py-4 rounded-tl-xl text-center">Imagen</th>
+                                <th class="px-6 py-4">T-Demencia</th>
+                                <th class="px-6 py-4">¿Qué es?</th>
+                                <th class="px-6 py-4">Causa Principal</th>
+                                <th class="px-6 py-4">Síntomas Clave</th>
+                                <th class="px-6 py-4">Tratamiento</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-purple-500/10">
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="px-4 py-4 text-center">
+                                    <div class="w-16 h-16 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto border border-purple-500/30">
+                                        🧠
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 font-extrabold text-purple-400">Alzheimer</td>
+                                <td class="px-6 py-4 text-sm leading-relaxed">Enfermedad progresiva que destruye neuronas y conexiones.</td>
+                                <td class="px-6 py-4 text-sm">Acumulación de <span class="font-bold text-indigo-300">placas amiloides</span> y ovillos de proteína tau.</td>
+                                <td class="px-6 py-4 text-sm">Pérdida de memoria reciente, desorientación y cambios de humor.</td>
+                                <td class="px-6 py-4 text-sm">Inhibidores de colinesterasa y estimulación cognitiva. No tiene cura.</td>
+                            </tr>
+
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="px-4 py-4 text-center">
+                                    <div class="w-16 h-16 bg-red-500/20 rounded-lg flex items-center justify-center mx-auto border border-red-500/30">
+                                        🩸
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 font-extrabold text-red-400">Vascular</td>
+                                <td class="px-6 py-4 text-sm leading-relaxed">Deterioro por falta de flujo sanguíneo al cerebro.</td>
+                                <td class="px-6 py-4 text-sm">Mini-derrames cerebrales (<span class="font-bold text-red-300">ACV</span>),hipertensión severa que daña
+                                    las arterias del cerebro</td>
+                                <td class="px-6 py-4 text-sm">Dificultad para planificar, lentitud de pensamiento, problemas de marcha,el deterioro suele ocurrir
+                                    "a pasos" (empeora de golpe tras un ictus).</td>
+                                <td class="px-6 py-4 text-sm">Control de presión arterial, colesterol y diabetes para evitar más daño y que no avance.</td>
+                            </tr>
+
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="px-4 py-4 text-center">
+                                    <div class="w-16 h-16 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto border border-blue-500/30">
+                                        👁️
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 font-extrabold text-blue-400">Cuerpos de Lewy</td>
+                                <td class="px-6 py-4 text-sm leading-relaxed">Depósitos anormales de proteína alfa-sinucleína en las neuronas.</td>
+                                <td class="px-6 py-4 text-sm">Acumulación de <span class="font-bold text-blue-300">proteínas</span> que afectan mensajeros químicos del cerebro.</td>
+                                <td class="px-6 py-4 text-sm"><span class="font-bold text-yellow-300">Alucinaciones visuales</span>(ven personas o animales que no están), temblores y fluctuaciones de alerta.</td>
+                                <td class="px-6 py-4 text-sm">Fármacos para el Parkinson y terapias de sueño.</td>
+                            </tr>
+
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="px-4 py-4 text-center">
+                                    <div class="w-16 h-16 bg-green-500/20 rounded-lg flex items-center justify-center mx-auto border border-green-500/30">
+                                        👤
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 font-extrabold text-green-400">Frontotemporal</td>
+                                <td class="px-6 py-4 text-sm leading-relaxed">Afecta los lóbulos frontales y temporal del cerebro encogiendolos.<span class="font-bold text-green-300">Tipos 1. Variante conductual:</span></span>cambia la personalidad <span class="font-bold text-green-300">2. Afasia progresiva primaria:</span>afecta solo el habla y el lenguaje.</td>
+                                <td class="px-6 py-4 text-sm">Degeneración de los <span class="font-bold text-green-300">lóbulos frontales</span> y temporales.</td>
+                                <td class="px-6 py-4 text-sm">Cambios drásticos en <span class="font-bold text-green-300">personalidad y en el habla.</span></td>
+                                <td class="px-6 py-4 text-sm">Antidepresivos y terapia de lenguaje. Foco en manejo de conducta.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="diagnosticado" class="mt-10 h-[1460px]"> 
+                <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl md:text-5xl font-extrabold mb-10">
+                    Un nuevo camino: Primeros pasos tras el diagnóstico
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 items-center">
+                    
+                    <div class="lg:mb-[130px]">
+                        <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                            Vivir con Alzheimer al inicio es como estar en una habitación donde la luz parpadea. Aún hay claridad, pero hay miedo,
+                            Si es usted o un ser querido ha sido diagnosticado con la enfermedad de Alzheimer o alguna demencia relacionada siga estos concejos o comuníqueseloa a su familiar. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Acepta tus emociones: Es normal sentir rabia, miedo o negación. No te apresures a "estar bien". <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Enfócate en lo que puedes hacer: Mantén tus rutinas. El ejercicio físico y la vida social son tus mejores aliados para ralentizar el avance. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Simplifica tu entorno: Empieza a etiquetar cajones o a usar una agenda única. No esperes a que la memoria falle más para crear estos hábitos.
+                        </p>
+                        <div>
+                            <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900">Planificación de la atención médica</h2>
+                        </div>
+                        <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                            Hable con su familia, amigos y proveedores de atención médica sobre qué tipos de cuidados desearía,en el caso de la planificación de la atención médica, estas directivas comunican de forma anticipada los deseos de una persona.<br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> <span class="font-bold text-purple-900">Un testamento vital (o en vida)</span>,que permite que los médicos sepan cómo desea que le den tratamiento si está falleciendo o queda inconsciente permanentemente
+                            y no puede tomar sus propias decisiones sobre tratamientos de emergencia.<br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> <span class="font-bold text-purple-900">Un poder notarial duradero para la atención médica</span>, que designa a alguien como apoderado legal para que tome decisiones médicas cuando usted no pueda hacerlo. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> <span class="font-bold text-purple-900">Una orden de no intubar (DNI, por sus siglas en inglés)</span>, que permite que el personal médico de un hospital o un asilo sepa que usted no desea que lo conecten a una máquina para respirar. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> <span class="font-bold text-purple-900">Una orden de no resucitar (DNR, por sus siglas en inglés)</span>, que informa a los profesionales de salud que no deben realizar resucitación cardiopulmonar (RCP) u otro procedimiento de soporte vital, en caso de que se detenga el corazón o la respiración.
+                        </p>
+                        <div>
+                            <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900">Planificación financiera</h2>
+                        </div>
+                        <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                            Las directivas anticipadas para la planificación financiera son documentos que comunican los deseos financieros de la persona y deben prepararse mientras ella aún tenga la capacidad legal para tomar decisiones. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> <span class="font-bold text-purple-900">Un testamento</span>, que especifique la forma en que se distribuirá y gestionará su patrimonio (como propiedades, efectivo y otros activos financieros) cuando fallezca. El documento también puede abordar asuntos como el cuidado de menores, donaciones y arreglos para el final de la vida, como el funeral y el entierro. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> <span class="font-bold text-purple-900">Un poder notarial duradero para las finanzas</span>,  que designa a alguien para que tome las decisiones financieras por usted cuando ya no lo pueda hacer. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> <span class="font-bold text-purple-900">Un fideicomiso en vida</span>, que designa e instruye a alguien, denominado fideicomisario, para que mantenga y distribuya la propiedad y los fondos en nombre suyo cuando usted ya no pueda hacerse cargo de sus asuntos.
+                        </p>
+                    </div>
+
+                    <div class="mx-auto overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-300 w-full max-w-[500px] aspect-square mb-[500px]">
+                        <img src="../images/planearalzahi.png" 
+                            alt="Médicos trabajando" 
+                            class="w-full h-full object-cover  object-[50%_33%]">
+                    </div>
+                </div>
+            </div>
+
+            <div id="concejoscuidador" class="mb-[10px]"> 
+                <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl md:text-5xl font-extrabold mb-10">
+                    Cuidar con dedicación y ternura
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 items-center">
+                    <div class="flex flex-col gap-6 w-full max-w-[500px] mx-auto mb-[5px]">
+
+                        <div class="mx-auto overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-300 w-full max-w-[500px] aspect-square">
+                            <img src="../images/cuidados1.png" 
+                            alt="imaplanear" 
+                            class="w-full h-full object-cover  object-[50%_33%]">
+                        </div>
+                        <div class="mx-auto overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-300 w-full max-w-[500px] aspect-square ">
+                            <img src="../images/cuidados2.png" 
+                            alt="imaplanear" 
+                            class="w-full h-full object-cover  object-[50%_33%]">
+                        </div>
+                        <div class="mx-auto overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-300 w-full max-w-[500px] aspect-square ">
+                            <img src="../images/cuidados3.png" 
+                            alt="imaplanear" 
+                            class="w-full h-full object-cover  object-[50%_33%]">
+                        </div>
+                    </div>
+
+                    <div class="lg:mb-[10px]">
+                        <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                            La palabra <span class="font-bold text-purple-900">“cuidador”</span> se usa para referirse a cualquier persona que ofrece su cuidado a otra. Millones de personas que viven alrededor del mundo cuidan a un amigo o familiar con la enfermedad de Alzheimer o alguna demencia relacionada.
+                            Para muchas familias, cuidar a una persona con demencia no es un trabajo facil,puede resultar agobiante.
+                        </p>
+                        <div>
+                            <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900">Consejos para su cuidado diario</h2>
+                        </div>
+                        <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                            Al inicio de la enfermedad de Alzheimer y las demencias relacionadas, las personas presentan cambios en el pensamiento, la memoria y el razonamiento de una forma que afecta la vida y las actividades diarias.
+                            A continuación, encontrará algunos consejos que pueden considerarse al principio y a medida en que la enfermedad va avanzando: <br> <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Intente mantener una rutina establecida, como bañarse, vestirse y comer a la misma hora todos los días. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Planifique actividades que la persona disfruta e intente hacerlas a la misma hora todos los días. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Considere el uso de un sistema o de recordatorios que ayuden a las personas si deben tomar medicamentos con regularidad. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Consígale a la persona ropa holgada y cómoda que le sea fácil de usar. <br>             
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Use una silla para duchas que sea fuerte para que sostenga a una persona que esté inestable y así evitar que se caiga. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span> Sirva los alimentos en un lugar familiar y constante, y dé a la persona suficiente tiempo para que coma.
+                        </p>
+                        <div>
+                            <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900">Consejos para abordar cambios en su comunicación y su conducta</h2>
+                        </div>
+                        <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                            La comunicación puede ser difícil para las personas con Alzheimer y las demencias relacionadas, ya que tienen problemas para recordar las cosas,
+                            se pueden poner ansiosas, agitadas o hasta enojadas. En algunos tipos de demencia, las habilidades del lenguaje resultan afectadas, por lo que
+                            pueden tener dificultad para encontrar la palabra correcta o para hablar, usted podría sentirse frustrado o impaciente, pero es importante comprender
+                            que es la enfermedad no ellos. <br> <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Tranquilizar a la persona. Hable calmadamente no responda de manera enojada siempre de forma calmada. Escuche las preocupaciones y las frustraciones que tenga. Si la persona está enojada o temerosa, intente mostrarle que la comprende. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Permita que la persona mantenga tanto control de su vida como sea posible. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Mantenga en la casa fotografías y objetos familiares que la persona aprecie, para así ayudarla a sentirse más segura. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Si la persona no sabe quién es usted, recuérdeselo, pero intente no decir: “¿no te acuerdas?”a o temerosa, intente mostrarle que la comprende. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Fomente una conversación en la que ambos participen durante el mayor tiempo posible. <br>
+                        </p>
+                        <div>
+                            <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900">Consejos de seguridad para el hogar </h2>
+                        </div>
+                        <p class="text-white mb-6 text-xl leading-relaxed text-left">
+                            puede tomar ciertas medidas para que el hogar sea más seguro. La eliminación de peligros y la inclusión de dispositivos de seguridad en el hogar ayudan a que la persona tenga más libertad de desplazarse de forma independiente y segura. <br> <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Si tiene escaleras, asegúrese que haya por lo menos un pasamanos. Coloque alfombras o franjas de seguridad antideslizantes en los peldaños, o bien, marque los bordes de las gradas con cinta adhesiva de colores brillantes, a fin de que sean más visibles. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Inserte enchufes de seguridad en los tomacorrientes que no se estén usando. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Despeje el paso guardando cualquier artículo que no se esté usando y elimine alfombras pequeñas, cables eléctricos y otros artículos. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Asegúrese de que haya una buena iluminación en todas las habitaciones y las áreas exteriores que visita la persona. <br>
+                            <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Elimine o guarde bajo llave productos de limpieza o para el hogar, como disolventes de pinturas y fósforos. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cuidadorconcejo" class="mb-[10px]"> 
+                <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl md:text-5xl font-extrabold mb-10">
+                    Cuídese mientras cuida a un ser querido 
+                </h2>
+
+                <p class="text-white mb-6 text-xl leading-relaxed text-left ">
+                    Cuidar a una persona con Alzheimer o con una demencia relacionada requiere de tiempo y esfuerzo. Puede sentirse solo y frustrado. Hasta puede llegar a sentirse enojado, lo que podría ser una señal de que está 
+                    intentando asumir demasiado. Es importante hallar tiempo para cuidarse a sí mismo. <br> <br>
+                    <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Pida ayuda cuando la necesite. Esto puede incluir solicitar a sus familiares y amigos que ayuden, no te cargues solo,hay mas personas que pueden cuidar con la misma dedicación a tu ser amado. <br>
+                    <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Consuma alimentos nutritivos que le pueden ayudar a mantenerse saludable y activo por más tiempo. <br>
+                    <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Únase a un grupo de apoyo para cuidadores, ya sea en línea o en persona. Reunirse con otros cuidadores le dará la oportunidad de compartir historias e ideas, y también puede ayudarle a evitar que se sienta aislado.Como en nuestro espacio de <a href="seccionchat.html" class="text-purple-900 underline hover:text-purple-600">red de apoyo</a> <br>
+                    <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Tome momentos de descanso todos los días. Intente hacer una taza de té o llamar a un amigo. <br>
+                    <span class="color: #c084fc; font-weight: bold; vertical-align: middle; position: relative; top: -2px;">•</span>Ejercítese tan a menudo como sea posible. Intente practicar yoga o salir a dar un paseo. <br> <br>
+                    El estrés, el agotamiento y la culpa son comunes, pero encontrar maneras de cuidarse puede ayudar a reducir estos sentimientos y darle más fuerza para superar la fatiga del cuidador y apoyar a su ser querido. 
+                    La Doctor. Tulasi Goriparthi, psiquiatra de Banner Health, compartió algunas maneras de encontrar el equilibrio.
+                </p>
+
+                <div class="max-w-[1000px] mx-auto py-16 px-6 ">   
+                    <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900 text-center">Nivel 1: El Respiro Diario (Micro-descansos) </h2>
+
+                    <div class="relative z-10 flex flex-col lg:flex-row items-stretch justify-between gap-10">
+                        
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen1.png" 
+                                    alt="Equipo planificando" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 1</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Ritual de Silencio (10 min):</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    Antes de que tu familiar despierte o cuando duerma la siesta, siéntate a tomar un café o
+                                    té sin celular, sin televisión y sin pensar en tareas. Solo respira.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen2.png" 
+                                    alt="Diseño y desarrollo" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 2</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Movimiento Liberador:</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    No tienes que ir al gimnasio. Estiramientos de cuello, hombros y espalda durante 5 minutos ayudan a soltar la tensión física que el estrés acumula en los músculos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900 text-center mt-[50px]">Nivel 2: La Desconexión Semanal (Tu espacio)</h2>
+
+                    <div class="relative z-10 flex flex-col lg:flex-row items-stretch justify-between gap-10">
+                        
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen3.png" 
+                                    alt="Equipo planificando" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 3</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Hobby "Fuera de la Enfermedad":</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    Dedica al menos 2 horas a la semana a algo que no tenga nada que ver con el Alzheimer: leer una novela, pintar, arreglar una planta
+                                    o ver una serie. Necesitas que tu cerebro recuerde que eres más que un cuidador.                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen4.png" 
+                                    alt="Diseño y desarrollo" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 4</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Círculo de Ventilación:</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    Habla con un amigo o familiar, pero con una regla: <span class="font-bold text-purple-900">los primeros 15 minutos</span> no se habla del paciente. 
+                                    Habla de ti, de tus planes o de noticias.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900 text-center mt-[50px]">Nivel 3: El Día de Escape Mensual (Oxigenación)</h2>
+
+                    <div class="relative z-10 flex flex-col lg:flex-row items-stretch justify-between gap-10">
+                        
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen5.png" 
+                                    alt="Equipo planificando" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 5</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Cita Contigo Mismo:</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    Un día al mes, delega el cuidado (con otro familiar o un cuidador pago). Sal de la casa. Ve a un parque, 
+                                    al cine o simplemente a caminar por un centro comercial. Estar en un entorno diferente rompe el ciclo de "hospital en casa".                              
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen6.png" 
+                                    alt="Diseño y desarrollo" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 6</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Encuentro Social:</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    Reúnete con personas que te hagan reír. La risa es el antídoto natural más fuerte contra el cortisol (la hormona del estrés).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-extrabold mb-6 dark:text-purple-900 text-center mt-[50px]">Nivel 4: La Estructura Mental (Salud a largo plazo)"</h2>
+                        
+                    <div class="relative z-10 flex flex-col lg:flex-row items-stretch justify-between gap-10">
+
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen7.png" 
+                                    alt="Equipo planificando" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 7</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Acepta la Imperfección:</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    Habrá días en que pierdas la paciencia. Perdónate. No eres un robot, eres un ser humano bajo una presión extrema.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 flex flex-col items-center group">
+                            
+                            <div class="w-full aspect-video rounded-3xl border-8 border-white bg-purple-100 shadow-2xl overflow-hidden transition-all duration-500 ease-in-out hover:scale-105 hover:border-purple-600 hover:shadow-purple-500/30 cursor-pointer">
+                                <img src="../images/rutinaimagen8.png" 
+                                    alt="Diseño y desarrollo" 
+                                    class="w-full h-full object-cover">
+                            </div>
+                            
+                            <div class="mt-6 text-center px-2">
+                                <span class="text-xs font-bold uppercase tracking-widest text-purple-700">Paso 8</span>
+                                <h3 class="text-2xl font-bold text-purple-950 mt-1 mb-2">Chequeo Médico Propio:</h3>
+                                <p class="text-purple-900 text-base leading-relaxed max-w-[350px]">
+                                    No ignores tus propios dolores o tu falta de sueño. Si tú no tienes salud, no habrá nadie para cuidar de tu familiar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p class="text-white mb-6 text-3xl leading-relaxed text-left text-center font-bold ">
+                    Llevar a cabo esta rutina será de gran ayuda. Recuerda que pedir ayuda no es signo de debilidad, sino de inteligencia. Tú también importas.
+                </p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- <div> 
+                <h2 class="bg-clip-text text-transparent bg-gradient-to-r from-purple-900 via-purple-600 to-indigo-600 text-4xl md:text-5xl font-extrabold mb-10">
+                    Como
+                </h2>
+
+                <div class="grid lg:grid-cols-[1.5fr_1fr] gap-12 items-center">
+                    
+                    <div class="mb-[130px]">
+                        <h2 class="text-4xl font-extrabold mb-6 text-purple-700">Tu salud es nuestra prioridad</h2>
+                        <p class="text-white mb-6 text-lg leading-relaxed text-left">
+                            No somos solo una clínica, somos un equipo dedicado a transformar la forma en que vives y sanas. 
+                            Nuestro enfoque integral combina tecnología de punta con calidez humana.
+                        </p>
+                    </div>
+
+                    <div class="mx-auto overflow-hidden rounded-2xl shadow-2xl transition-transform hover:scale-[1.02] duration-300 w-[350px] h-[350px]">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070" 
+                            alt="Médicos trabajando" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+
+        </section>
+    </div>
+
+    <script src="../js/flowbite.min.js"></script>
+</body>
+</html>
+
+
