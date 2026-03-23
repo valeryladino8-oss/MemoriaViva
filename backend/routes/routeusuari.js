@@ -21,4 +21,31 @@ router.post('/registrar', async (req, res) => {
     });
 });
 
+router.post('/login', (req, res) => {
+    const { email, password } = req.body;
+
+    const sql = 'SELECT * FROM usuarios WHERE email = ?';
+    
+    db.query(sql, [email], async (err, result) => {
+        if (err) return res.status(500).json({ mensaje: "Error en el servidor" });
+
+        if (result.length === 0) {
+            return res.status(401).json({ mensaje: "El correo no está registrado" });
+        }
+
+        const usuario = result[0];
+        const coinciden = await bcrypt.compare(password, usuario.password);
+
+        if (!coinciden) {
+            return res.status(401).json({ mensaje: "Contraseña incorrecta" });
+        }
+
+        res.status(200).json({ 
+            mensaje: "¡Bienvenido de nuevo!",
+            nombre: usuario.nombre 
+        });
+    });
+});
+
 module.exports = router;
+
