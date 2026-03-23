@@ -1,27 +1,21 @@
-// // boton de registro
-// const btn = document.getElementById('botformu');
-//                     const form = document.getElementById('formu');
-
-//                     btn.addEventListener('click', () => {
-//                     form.classList.remove('hidden');
-//                     btn.classList.add('hidden');
-//                     });
-
-// // Boton de iniciar sesion                    
-// const btni = document.getElementById('botingre');
-//                     const formi = document.getElementById('ingre');
-
-//                     btni.addEventListener('click', () => {
-//                     formi.classList.remove('hidden');
-//                     btni.classList.add('hidden');
-//                     });     
-
 
 
 // Esperamos a que el HTML cargue completamente
 document.addEventListener('DOMContentLoaded', () => {
     
     const formulario = document.querySelector('.formulario1');
+
+    const checkTerminos = document.getElementById('acepto-terminos');
+    const btnAceptarT = document.getElementById('btn-aceptar-t');
+    const btnDenegarT = document.getElementById('btn-denegar-t');
+
+    // Funcionalidad de los botones del cuadro de texto
+    if(btnAceptarT) {
+        btnAceptarT.addEventListener('click', () => { checkTerminos.checked = true; });
+    }
+    if(btnDenegarT) {
+        btnDenegarT.addEventListener('click', () => { checkTerminos.checked = false; });
+    }
 
     formulario.addEventListener('submit', async (e) => {
         e.preventDefault(); // Evita que la página se recargue sola
@@ -34,10 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const apellido = document.getElementById('floating_last_name').value;
         const telefono = document.getElementById('floating_phone').value;
         const ocupacion = document.getElementById('floating_occupation').value;
+        const aceptoTerminos = checkTerminos.checked;
 
         // 2. Validación simple de contraseña
         if (password !== confirm_password) {
             alert("¡Las contraseñas no coinciden, verifica por favor!");
+            return;
+        }
+
+        if (!aceptoTerminos) {
+            alert("Para registrarte en Memoria Viva es obligatorio aceptar los términos y condiciones.");
             return;
         }
 

@@ -14,7 +14,7 @@
 <body class="bg-gradient-to-br from-purple-600 via-white to-purple-600 flex items-center justify-center min-h-screen">
     <div class="container mx-auto p-4 max-w-[400px]">
         <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center">
-            <img src="./images/Valery-Logo.png" alt="Logo" class="w-45 h-40 mb-6">
+            <img src="images/Valery-Logo.png" alt="Logo" class="w-45 h-40 mb-6">
 
             <div class="flex flex-col w-full gap-6">
                 <button id="botformu" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
@@ -32,7 +32,7 @@
     <!-- Registro Modal -->
     <div id="authentication-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
         <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-white White-gray-00">
-            <img class="w-[80px] h-[80px] rounded-xl border-3 border-purple-600 mr-4" src="./images/Valery-Logo.png" alt="logo">
+            <img class="w-[80px] h-[80px] rounded-xl border-3 border-purple-600 mr-4" src="images/Valery-Logo.png" alt="logo">
             Memoria Viva    
         </a>
         <div class="bg-white w-full max-w-2xl rounded-2xl p-8 relative">
@@ -67,6 +67,78 @@
                             <div class="relative z-0 w-full mb-5 group">
                                 <input type="text" name="floating_occupation" id="floating_occupation" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                                 <label for="floating_occupation" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 -top-[3px] -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Ocupacion(trabajo)</label>
+                            </div>                          
+                        </div>
+
+                        <div class="flex items-center mb-5">
+                            <input id="acepto-terminos" type="checkbox" value="" class="w-4 h-4 text-purple-600 bg-gray-100 border-gray-300 rounded focus:ring-purple-500 focus:outline-none" required>
+                            <label for="acepto-terminos" class="ms-2 text-sm font-medium text-gray-900">
+                                Acepto los <button type="button" data-modal-target="modal-terminos" data-modal-toggle="modal-terminos" class="text-purple-700 hover:underline font-bold">términos y condiciones</button>
+                            </label>
+                        </div>
+
+                        <div id="modal-terminos" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-[100] justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full bg-black/50">
+                            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                <div class="relative bg-white rounded-2xl shadow">
+                                    <div class="flex items-center justify-between p-4 border-b rounded-t">
+                                        <h3 class="text-xl font-semibold text-gray-900">CONTRATO DE PRESTACIÓN DE SERVICIOS DIGITALES Y POLÍTICA INTEGRAL
+                                        DE TRATAMIENTO DE DATOS PERSONALES DE LA APLICACIÓN MEMORIAVIVA</h3>
+                                    </div>
+                                    <div class="p-6 space-y-4 h-64 overflow-y-scroll text-sm text-gray-600">
+                                        <p>1. LAS PARTES: Sus datos serán encriptados El presente contrato se celebra entre el USUARIO:toda persona natural que
+                                        descargue y use la aplicación y EL PRESTADOR:Oasis Apps, NIT:1014666155,con domicilio
+                                        en la ciudad de Villavicencio, Colombia,correo electrónico de contacto:oasisapss@gmail.com.
+                                        quien es el titular legítimo de la plataforma. <br> <br>
+                                        2. ACEPTACIÓN POR ADHESIÓN: Al hacer clic en "Aceptar" o crear una cuenta, el Usuario
+                                        acepta de manera libre y voluntaria todas las cláusulas aquí expresadas. Este documento
+                                        regula el acceso a las secciones de: (i) Información, (ii) Comunidad y (iii) Actividades de
+                                        estimulación. <br> <br>
+                                        3.NATURALEZA DEL SERVICIO:La Aplicación es una plataforma de apoyo para cuidadores, toda persona que tenga su  bajo su cuidado 
+                                        a personas con enfermedad de Alzheimer. El servicio se divide en tres ejes: <br> <br>
+                                        •Información: Contenido educativo sobre la enfermedad. <br>
+                                        •Comunidad: Espacio de interacción y apoyo mutuo entre usuarios. <br>
+                                        •Actividades: Guías de estimulación cognitiva y talleres para fortalecer el vínculo cuidador-paciente. <br> <br>
+                                        4. EXCLUSIÓN DE RESPONSABILIDAD MÉDICA:IMPORTANTE: El contenido de La Aplicación tiene fines estrictamente informativos
+                                        y de apoyo. MEMORIAVIVA no presta servicios médicos, diagnósticos ni tratamientos. Ninguna información aquí contenida 
+                                        reemplaza la consulta con un médico profesional. El Usuario asume la responsabilidad total por la implementación de las
+                                        actividades y consejos compartidos en la comunidad. <br> <br>
+                                        5. REGLAS DE LA COMUNIDAD (SECCIÓN SOCIAL): <br>
+                                        Al participar en la sección de "Comunidad", el Usuario se compromete a: <br> <br>
+                                        •Mantener un lenguaje respetuoso y empático. <br>
+                                        •No compartir datos personales sensibles de los pacientes (como nombres completos,
+                                        documentos de identidad o fotos sin consentimiento) para proteger su dignidad. <br>
+                                        •No promocionar medicamentos o curas "milagro". <br>
+                                        •Moderación: La Aplicación se reserva el derecho de eliminar comentarios o expulsar
+                                        usuarios que agredan a otros o compartan información peligrosa. <br> <br>
+                                        6. PROPIEDAD INTELECTUAL: <br> <br>
+                                        •Contenido de la App: Los textos de información sobre el Alzheimer y las guías de
+                                        actividades son propiedad de La Aplicación. Queda prohibida su reproducción para fines
+                                        comerciales sin permiso. <br> 
+                                        •Contenido del Usuario: Al publicar un consejo en la comunidad, el Usuario otorga a La
+                                        Aplicación el derecho de mantener ese contenido visible para ayudar a otros
+                                        cuidadores, incluso si el usuario cierra su cuenta. <br> <br>
+                                        7. TRATAMIENTO DE DATOS (HABEAS DATA): <br>
+                                        En cumplimiento de la Ley 1581 de 2012 (o la normativa de tu país), informamos que: <br> <br>
+                                        •Datos recolectados: (Nombre, Apellido,correo electrónico,telefono y ocupación(trabajo)). <br>
+                                        •Finalidad: Personalizar la experiencia de usuario y enviar notificaciones sobre nuevos talleres. <br>
+                                        •Datos Sensibles: La Aplicación no solicitará historias clínicas. Si el usuario decide
+                                        compartir datos de salud voluntariamente en el foro, lo hace bajo su propio riesgo. <br> <br>
+                                        8. LIMITACIÓN DE RESPONSABILIDAD: <br>
+                                        La Aplicación no se hace responsable por: <br> <br>
+                                        1. Malas interpretaciones de los consejos dados por otros usuarios en la sección de comunidad. <br>
+                                        2. Accidentes que puedan ocurrir durante la realización de actividades de estimulación
+                                        cognitiva (el cuidador debe supervisar siempre al paciente). <br>
+                                        3. Caídas temporales del servicio o fallos técnicos. <br> <br>
+                                        7. MODIFICACIONES Y CIERRE: <br>
+                                        La Aplicación podrá actualizar estos términos en cualquier momento. Si el Usuario continúa
+                                        usando la App después de un cambio, se entiende que acepta las nuevas reglas.
+
+                                    </div>
+                                    <div class="flex items-center p-4 border-t border-gray-200 rounded-b gap-3">
+                                        <button id="btn-aceptar-t" type="button" data-modal-hide="modal-terminos" class="text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-5 py-2.5">Aceptar</button>
+                                        <button id="btn-denegar-t" type="button" data-modal-hide="modal-terminos" class="text-gray-500 bg-white hover:bg-gray-100 border border-gray-200 font-medium rounded-lg text-sm px-5 py-2.5">Denegar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -83,7 +155,7 @@
         
                         <div class="flex flex-col items-center justify-center h-[300px] px-6 py-8 mx-auto gap-4 -translate-x-1">
                             <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-white White-gray-00">
-                                <img class="w-8 h-8 rounded-md border-1 border-purple-600 mr-2" src="./images/Valery-Logo.png" alt="logo">
+                                <img class="w-8 h-8 rounded-md border-1 border-purple-600 mr-2" src="images/Valery-Logo.png" alt="logo">
                                 Memoria Viva    
                             </a>
                             <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 white:bg-gray-500 dark:border-gray-700">
@@ -116,7 +188,8 @@
 
 
 
-    <script src="./js/registro.js"></script>
-    <script src="./js/flowbite.min.js"></script> 
+    <script src="js/registro.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/flowbite.min.js"></script> 
 </body>
 </html>
