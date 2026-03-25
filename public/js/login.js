@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const resultado = await respuesta.json();
 
             if (respuesta.ok) {
+                localStorage.setItem('userEmail', email);
+                
                 alert("¡Hola! " + resultado.nombre + ", qué bueno verte de nuevo.");
                 // 3. Redireccionamos a la pantalla principal de la App
                 window.location.href = '/vistas/Apli-Inicio1.html';
